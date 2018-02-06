@@ -1,14 +1,15 @@
 {
 	"manifest_version": 2,
 	"name": "OPA Tools",
-	"description": "Helping queridos to do a better job at Quero Education.",
-  	"version": "0.0.1",
+	"description": "Helping quero-queros to do a better job at Quero Education.",
+  	"version": "0.0.4",
 
 	"permissions":[
 		"<all_urls>",
 		"tabs",
-        "identity",
-        "identity.email"
+    "identity",
+    "identity.email",
+    "storage"
 	],
 
 	"icons": {
@@ -23,18 +24,17 @@
     "default_popup": "popup.html"
   },
 
-
 	 "content_scripts": [{
-		 "matches": ["http://*/*", "https://*/*"],
-        "js":      ["content.js"]
+		 "matches": ["http://vendas.querobolsa.com.br/*", "https://vendas.querobolsa.com.br/*"],
+        "js":      ["/js/jquery-3.2.1.min.js", "content.js" ]
     }],
         
     "oauth2": {
-        "client_id": "973513959897-u6ji4hoe980cj2cmclb9tohqehj86s0v.apps.googleusercontent.com",
+        "client_id": "737852166161-o0kd0fnbq7ot74fl497ggnjl7rri70u1.apps.googleusercontent.com",
         "scopes": ["https://www.google.com/m8/feeds", "https://www.googleapis.com/auth/userinfo.email"]   
     },
     
     "content_security_policy": "script-src 'self' https://www.googleapis.com; object-src 'self'",
-     "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgLNyb6VNJbPFAoyG1AuuO4U9cpH2o3O6l2T9S59agIbD9NGKRlyJGdvvznjsbCXY+3NV+MHLYY1iR4DW6Ja6xFRbvjLeciR0Oz58GZkkldOK5Rpy6ytvG8NHB863ov64GkfrzSiIF6wzEvxP3ZI7ZqXQBgRBNFNI7JNQTa9N0mTJprzoMSvu6H7QmMMPzCWm1T9zlo0YduYuLrBXCGrozl3xWa8B0XVMeURQUYu864R0QR93rVUWp0ZWcf6JRwcp4K5WXgjRR8wc5olac8WDSkUqEdEzZiWXYegDB3zFvss8qt9HLgpxRkc6yiqK7Q++xnWApBfm1T8cx2h2ljaaSQIDAQAB"
+     "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArabl0CPZ/dZOxFhJQttOQgg1LRByOFLfqMy9egpAVlsAL3dQItKJ4s9si6H51d16B8LW5Y5jvY+izTPYoVlVQLCletR7cyRRGR3b1zheKvq7In0lAAIgk7wNdXdfyLVDIMJcobDPxLVNuOa+c+ynfo83+ppXJ3mMXI7Hy9O3hkHAk9M+BDANZFoCfe8np5scBU8aN2lcr66l1zO8Ct48mS4ThhgBTMZwjQzdgXgSEWSQz5KA+TkWWzOiTMFpBKhEaO1ZyHvyv2wnA5noGFXfme76UnSuRlYoZfW7J3Shk6M1k1+h4XWJlLQQMAAKftsXHWwap69Y0Uu/ixDsAD8sSwIDAQAB"
     
 }

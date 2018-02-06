@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+	<head>
+	    <meta charset="utf-8">
+		<meta name="description" content="Quero Education extension for OPA">
+		<meta name="author" content="Alefe Fazio and Elliot Hesp">
+		
+		<title>OPA Tools</title>
+	
+		<!-- Cascading Style Sheets -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">	
+		<link href="options.css" rel="stylesheet" media="screen">	
+	</head>
+	<body>
+		<div id="header">
+	    	<h1><strong> OPA Tools </strong><img src="img/icon16.png"></h1>
+        </div>
+        <div class="container">
+        	<form>
+        	<h2>Opções Gerais</h2>
+	    			<label>
+	    				Nome do Guia: 
+	    				<input type="text" id="gr-nomeGuia">
+					</label>
+				
+	    	<h2>Opções Whatsapp</h2>
+	    		
+						<label>
+							Texto do Ativo:
+							<textarea rows="4" cols="50" id="wp-ativo"></textarea>
+						</label>
+					<br>
+						<label>
+						
+							<input type="checkbox" id="wp-dataNome"> Salvar no padrão data + nome do aluno
+						</label>
+						<br>
+	    			<button id="save">Salvar</button>
+	    		</form>
+
+        </div>
+        
+			<!-- Scripts -->
+		<script src="options.js"></script>
+		<script src="js/jquery-3.2.1.min.js" type="application/javascript"></script>
+		<script src="js/bootstrap.min.js" type="application/javascript"></script>
+
+	</body>
+</html>
